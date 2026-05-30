@@ -1,0 +1,10 @@
+if SHIELD_KEYBOARD_LEFT || SHIELD_KEYBOARD_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "Keyboard"
+
+config SOC_SERIES_NRF52X
+    default y
+    depends on BOARD_XIAO_BLE
+
+endif
